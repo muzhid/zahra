@@ -30,7 +30,7 @@ export default function Home() {
               Responding to Gender-Based Violence with Care & Precision
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-blue-100">
-              A comprehensive clinical resource for Maldives healthcare professionals.
+              Research Findings and Clinical Training Tools for GBV Response in the Maldives.
             </p>
 
           </div>
