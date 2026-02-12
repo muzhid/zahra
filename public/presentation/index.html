@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLC Orientation & GBV Clinical Response — IGMH Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="slide-nav">
+    <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </button>
+    <span class="slide-counter" id="slideCounter">1 / 20</span>
+    <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- SLIDE 1: Title -->
+  <section class="slide active" id="slide-1">
+    <div class="slide-content title-slide">
+      <div class="title-badge">IGMH Training Programme</div>
+      <h1 class="main-title">MLC Orientation &<br>Clinical Best Practices</h1>
+      <p class="subtitle">Responding to Cases of Gender-Based Violence</p>
+      <div class="title-divider"></div>
+      <p class="meta-info">Patient Privacy & Confidentiality — During and Post Consultation</p>
+      <div class="presenter-info">
+        <div class="presenter-dot"></div>
+        <span>For Healthcare Professionals Across the Maldives</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: Overview -->
+  <section class="slide" id="slide-2">
+    <div class="slide-content">
+      <div class="section-tag">Overview</div>
+      <h2>Training Objectives</h2>
+      <div class="objectives-grid">
+        <div class="objective-card">
+          <div class="obj-icon obj-1">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>MLC Orientation</h3>
+          <p>Identification, documentation, and forensic evidence management</p>
+        </div>
+        <div class="objective-card">
+          <div class="obj-icon obj-2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3>Clinical Care</h3>
+          <p>Life-saving interventions, PEP, STI prophylaxis, and psychological first aid</p>
+        </div>
+        <div class="objective-card">
+          <div class="obj-icon obj-3">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3>Best Practices</h3>
+          <p>LIVES framework, informed consent, and objective documentation</p>
+        </div>
+        <div class="objective-card">
+          <div class="obj-icon obj-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3>Privacy &amp; Confidentiality</h3>
+          <p>Patient rights, information security, and mandatory reporting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: GBV Context -->
+  <section class="slide" id="slide-3">
+    <div class="slide-content">
+      <div class="section-tag">Context</div>
+      <h2>Gender-Based Violence in the Maldives</h2>
+      <div class="stat-highlight">
+        <div class="stat-number">1 in 3</div>
+        <div class="stat-desc">women aged 15–49 have experienced physical or sexual violence</div>
+        <div class="stat-source">— UNFPA / Ministry of Health, Maldives</div>
+      </div>
+      <div class="context-cards">
+        <div class="ctx-card">
+          <h4>Legal Framework</h4>
+          <p>Domestic Violence Prevention Act (DVPA) 2012 criminalises GBV and mandates healthcare provider reporting
+          </p>
+        </div>
+        <div class="ctx-card">
+          <h4>IGMH Role</h4>
+          <p>Family Protection Unit (est. 2004) — the sole state-supported centre providing GBV services</p>
+        </div>
+        <div class="ctx-card">
+          <h4>Updated Guidelines</h4>
+          <p>National guidelines updated in 2024 with UNFPA and Health Protection Agency support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: Section Divider - MLC -->
+  <section class="slide divider-slide" id="slide-4">
+    <div class="slide-content divider-content">
+      <div class="divider-number">01</div>
+      <h2 class="divider-title">MLC Orientation</h2>
+      <p class="divider-sub">Identification · Documentation · Forensics</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: MLC Identification -->
+  <section class="slide" id="slide-5">
+    <div class="slide-content">
+      <div class="section-tag section-1">MLC Orientation</div>
+      <h2>Identifying GBV Cases</h2>
+      <p class="slide-intro">GBV constitutes a medico-legal case requiring police notification under the Maldives DVPA
+        (2012)</p>
+      <div class="two-col">
+        <div class="col">
+          <h3 class="col-head">Physical Indicators</h3>
+          <ul class="check-list">
+            <li>Injuries inconsistent with explanation</li>
+            <li>Bruising in defensive locations</li>
+            <li>Injuries at various healing stages</li>
+            <li>Burns, bite marks, pattern injuries</li>
+            <li>Genital or rectal trauma</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="col-head">Behavioural Indicators</h3>
+          <ul class="check-list">
+            <li>Delayed presentation for care</li>
+            <li>Reluctance to undress/be examined</li>
+            <li>Evasive or inconsistent history</li>
+            <li>Companion answers for patient</li>
+            <li>Excessive anxiety, flinching</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout-info">
+        <strong>Screening Question (WHO):</strong> "In the past year, have you been hit, slapped, kicked, or otherwise
+        physically hurt by someone?"
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: MLC Protocol Steps -->
+  <section class="slide" id="slide-6">
+    <div class="slide-content">
+      <div class="section-tag section-1">MLC Orientation</div>
+      <h2>MLC Identification Protocol</h2>
+      <div class="steps-timeline">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Triage Screening <span class="time-tag">5–10 min</span></h4>
+            <p>Integrate GBV screening into routine history-taking using open-ended questions</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Detailed History <span class="time-tag">10–20 min</span></h4>
+            <p>Private room, trauma-informed interview. Record patient's own words verbatim</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Examination & Evidence <span class="time-tag">20–40 min</span></h4>
+            <p>Informed consent → head-to-toe examination → body map → forensic specimens</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Medical Interventions <span class="time-tag">Ongoing</span></h4>
+            <p>ABCDE approach, wound care, PEP, STI prophylaxis, emergency contraception</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>Legal Notification <span class="time-tag">Within 24h</span></h4>
+            <p>Mandatory report to Police, Family Protection Authority, Ministry of Gender</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h4>Follow-Up <span class="time-tag">Day 3 → Month 6</span></h4>
+            <p>Multidisciplinary coordination, safety monitoring, counselling referrals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: MLC Register -->
+  <section class="slide" id="slide-7">
+    <div class="slide-content">
+      <div class="section-tag section-1">MLC Orientation</div>
+      <h2>MLC Register Documentation</h2>
+      <p class="slide-intro">Every GBV case must be precisely recorded with the following fields:</p>
+      <div class="register-grid">
+        <div class="register-card">
+          <h4>Case ID</h4>
+          <p>Unique MLC Number (MLC-2026-001), Registration Date/Time</p>
+        </div>
+        <div class="register-card">
+          <h4>Patient</h4>
+          <p>Name, Age, Gender, National ID, Contact (with consent)</p>
+        </div>
+        <div class="register-card">
+          <h4>Incident</h4>
+          <p>Date/Time, Type of GBV, Location, Perpetrator relationship</p>
+        </div>
+        <div class="register-card">
+          <h4>Findings</h4>
+          <p>Injury summary, Exam date/time, Clinician name & signature</p>
+        </div>
+        <div class="register-card">
+          <h4>Evidence</h4>
+          <p>Specimen list, Collection time, Storage location</p>
+        </div>
+        <div class="register-card">
+          <h4>Treatment</h4>
+          <p>Medications given, Referrals made, Safety plan</p>
+        </div>
+        <div class="register-card">
+          <h4>Legal</h4>
+          <p>Police report number, Notification date, Consent status</p>
+        </div>
+        <div class="register-card">
+          <h4>Follow-Up</h4>
+          <p>Scheduled dates, Outcomes</p>
+        </div>
+      </div>
+      <div class="callout callout-warning">
+        <strong>Key Principle:</strong> Use the patient's exact words in quotation marks. Avoid clinical interpretation.
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: Chain of Custody -->
+  <section class="slide" id="slide-8">
+    <div class="slide-content">
+      <div class="section-tag section-1">MLC Orientation</div>
+      <h2>Chain of Custody Protocol</h2>
+      <p class="slide-intro">An unbroken chain ensures evidence admissibility in court</p>
+      <div class="coc-flow">
+        <div class="coc-step">
+          <div class="coc-icon">🧤</div>
+          <h4>Collect</h4>
+          <p>Fresh gloves per site, witness present, label immediately</p>
+        </div>
+        <div class="coc-arrow">→</div>
+        <div class="coc-step">
+          <div class="coc-icon">🏷️</div>
+          <h4>Label</h4>
+          <p>MLC No., item, date/time, collector name & signature</p>
+        </div>
+        <div class="coc-arrow">→</div>
+        <div class="coc-step">
+          <div class="coc-icon">📋</div>
+          <h4>Document</h4>
+          <p>Record in MLC Register + separate CoC form</p>
+        </div>
+        <div class="coc-arrow">→</div>
+        <div class="coc-step">
+          <div class="coc-icon">🔒</div>
+          <h4>Store</h4>
+          <p>Biological: 2–8°C locked. Non-bio: room temp, dry</p>
+        </div>
+        <div class="coc-arrow">→</div>
+        <div class="coc-step">
+          <div class="coc-icon">🤝</div>
+          <h4>Transfer</h4>
+          <p>Signed receipt from police officer with full details</p>
+        </div>
+        <div class="coc-arrow">→</div>
+        <div class="coc-step">
+          <div class="coc-icon">🔍</div>
+          <h4>Audit</h4>
+          <p>Regular review for breaches; immediate investigation</p>
+        </div>
+      </div>
+      <div class="evidence-windows">
+        <div class="ev-item"><strong>DNA swabs:</strong> ≤72–96h</div>
+        <div class="ev-item"><strong>Oral swabs:</strong> ≤24h</div>
+        <div class="ev-item"><strong>Blood/urine:</strong> ≤96h</div>
+        <div class="ev-item"><strong>Clothing:</strong> No strict limit</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9: Section Divider - Clinical -->
+  <section class="slide divider-slide divider-2" id="slide-9">
+    <div class="slide-content divider-content">
+      <div class="divider-number">02</div>
+      <h2 class="divider-title">Clinical Considerations</h2>
+      <p class="divider-sub">Immediate Care · Prevention · Psychological Support</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10: PEP Protocol -->
+  <section class="slide" id="slide-10">
+    <div class="slide-content">
+      <div class="section-tag section-2">Clinical Care</div>
+      <h2>HIV Post-Exposure Prophylaxis (PEP)</h2>
+      <div class="callout callout-critical">
+        <strong>⏰ Critical Window:</strong> Initiate within <strong>72 hours</strong> — ideally within 24 hours. Provide
+        full 28-day supply at initial visit.
+      </div>
+      <h3 class="table-title">WHO Recommended Regimen (Adults)</h3>
+      <div class="register-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Drug</th>
+              <th>Dose</th>
+              <th>Frequency</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tenofovir (TDF)</td>
+              <td>300 mg</td>
+              <td>Once daily</td>
+              <td>28 days</td>
+            </tr>
+            <tr>
+              <td>Emtricitabine (FTC)</td>
+              <td>200 mg</td>
+              <td>Once daily</td>
+              <td>28 days</td>
+            </tr>
+            <tr>
+              <td>Dolutegravir (DTG)</td>
+              <td>50 mg</td>
+              <td>Once daily</td>
+              <td>28 days</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 class="table-title">Follow-Up Schedule</h3>
+      <div class="timeline-mini">
+        <div class="tm-item"><span class="tm-dot"></span><strong>Baseline</strong><br>HIV test, creatinine</div>
+        <div class="tm-item"><span class="tm-dot"></span><strong>Week 2</strong><br>Renal function, adherence</div>
+        <div class="tm-item"><span class="tm-dot"></span><strong>Month 3</strong><br>HIV re-test</div>
+        <div class="tm-item"><span class="tm-dot"></span><strong>Month 6</strong><br>Final HIV re-test</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 11: STI + EC -->
+  <section class="slide" id="slide-11">
+    <div class="slide-content">
+      <div class="section-tag section-2">Clinical Care</div>
+      <h2>STI Prophylaxis & Emergency Contraception</h2>
+      <div class="two-col">
+        <div class="col">
+          <h3 class="col-head">STI Prophylaxis</h3>
+          <p class="col-note">Administer empirically — do NOT wait for results</p>
+          <div class="drug-list">
+            <div class="drug"><strong>Gonorrhoea:</strong> Ceftriaxone 500 mg IM</div>
+            <div class="drug"><strong>Chlamydia:</strong> Azithromycin 1 g oral</div>
+            <div class="drug"><strong>Trichomoniasis:</strong> Metronidazole 2 g oral</div>
+            <div class="drug"><strong>Hepatitis B:</strong> HBV Vaccine ± HBIG</div>
+            <div class="drug"><strong>Tetanus:</strong> Td/Tdap if wound present</div>
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="col-head">Emergency Contraception</h3>
+          <p class="col-note">Offer to ALL at risk of pregnancy</p>
+          <div class="drug-list">
+            <div class="drug"><strong>≤72h:</strong> Levonorgestrel 1.5 mg oral</div>
+            <div class="drug"><strong>≤120h:</strong> Ulipristal acetate 30 mg oral</div>
+            <div class="drug"><strong>≤5 days:</strong> Copper IUD insertion</div>
+          </div>
+          <div class="callout callout-info" style="margin-top:1rem">
+            EC does <strong>NOT</strong> protect against STIs. A pregnancy test should precede IUD insertion.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 12: Psychological First Aid -->
+  <section class="slide" id="slide-12">
+    <div class="slide-content">
+      <div class="section-tag section-2">Clinical Care</div>
+      <h2>Psychological First Aid (PFA)</h2>
+      <p class="slide-intro">Based on WHO protocol — not therapy, but critical first-line support</p>
+      <div class="pfa-grid">
+        <div class="pfa-step">
+          <div class="pfa-num">1</div>
+          <h4>Contact</h4>
+          <p>Compassionate introduction, explain your role</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">2</div>
+          <h4>Safety</h4>
+          <p>Ensure physical and emotional safety immediately</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">3</div>
+          <h4>Stabilize</h4>
+          <p>Calm breathing, grounding techniques for overwhelmed patients</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">4</div>
+          <h4>Assess</h4>
+          <p>Identify immediate needs — physical, psychological, social</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">5</div>
+          <h4>Assist</h4>
+          <p>Address practical needs: water, phone call, safe transport</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">6</div>
+          <h4>Connect</h4>
+          <p>Re-establish contact with trusted support persons</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">7</div>
+          <h4>Educate</h4>
+          <p>"Your reactions are normal responses to an abnormal situation"</p>
+        </div>
+        <div class="pfa-step">
+          <div class="pfa-num">8</div>
+          <h4>Link</h4>
+          <p>Connect to ongoing counselling, legal aid, community support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 13: Section Divider - Best Practices -->
+  <section class="slide divider-slide divider-3" id="slide-13">
+    <div class="slide-content divider-content">
+      <div class="divider-number">03</div>
+      <h2 class="divider-title">Best Practices in Response</h2>
+      <p class="divider-sub">LIVES Framework · Informed Consent · Objective Recording</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 14: LIVES Framework -->
+  <section class="slide" id="slide-14">
+    <div class="slide-content">
+      <div class="section-tag section-3">Best Practices</div>
+      <h2>The LIVES Framework <span class="source-tag">WHO</span></h2>
+      <div class="lives-grid">
+        <div class="lives-card lives-l">
+          <div class="lives-letter">L</div>
+          <h4>Listen</h4>
+          <p class="lives-desc">Listen closely with empathy, without judgment</p>
+          <p class="lives-example">"I'm here to listen. Please take your time."</p>
+        </div>
+        <div class="lives-card lives-i">
+          <div class="lives-letter">I</div>
+          <h4>Inquire</h4>
+          <p class="lives-desc">Ask about needs and concerns gently</p>
+          <p class="lives-example">"What are you most worried about right now?"</p>
+        </div>
+        <div class="lives-card lives-v">
+          <div class="lives-letter">V</div>
+          <h4>Validate</h4>
+          <p class="lives-desc">Affirm, believe, and remove self-blame</p>
+          <p class="lives-example">"What happened is NOT your fault. I believe you."</p>
+        </div>
+        <div class="lives-card lives-e">
+          <div class="lives-letter">E</div>
+          <h4>Enhance Safety</h4>
+          <p class="lives-desc">Collaboratively assess danger and plan safety</p>
+          <p class="lives-example">"Do you feel safe going home today?"</p>
+        </div>
+        <div class="lives-card lives-s">
+          <div class="lives-letter">S</div>
+          <h4>Support</h4>
+          <p class="lives-desc">Connect to services and ongoing support</p>
+          <p class="lives-example">"We can connect you to counselling. Would you like that?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 15: Informed Consent -->
+  <section class="slide" id="slide-15">
+    <div class="slide-content">
+      <div class="section-tag section-3">Best Practices</div>
+      <h2>Informed Consent Checklist</h2>
+      <p class="slide-intro">Obtain <strong>separate written consent</strong> for each element before proceeding</p>
+      <div class="consent-grid">
+        <div class="consent-item"><span class="consent-check">☐</span> Medical examination</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Genital/pelvic examination</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Forensic evidence collection</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Photography of injuries</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Blood/urine testing</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Treatment (PEP, STI, EC)</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Sharing info with police</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Sharing with FPA</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Referral to support services</div>
+        <div class="consent-item"><span class="consent-check">☐</span> Records used in court</div>
+      </div>
+      <div class="consent-principles">
+        <div class="cp"><strong>Voluntary</strong> — No pressure from anyone</div>
+        <div class="cp"><strong>Revocable</strong> — Can withdraw anytime</div>
+        <div class="cp"><strong>No consequence</strong> — Refusal doesn't affect treatment access</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 16: Body Map & Documentation -->
+  <section class="slide" id="slide-16">
+    <div class="slide-content">
+      <div class="section-tag section-3">Best Practices</div>
+      <h2>Objective Recording</h2>
+      <div class="two-col">
+        <div class="col">
+          <h3 class="col-head">Body Map Protocol</h3>
+          <ul class="num-list">
+            <li>Use standardised anatomical diagrams</li>
+            <li>Mark each injury with: location, size (cm), shape, colour, type</li>
+            <li>Use clock positions for anogenital findings</li>
+            <li>Photograph with consent (scale ruler in frame)</li>
+            <li>Document ABSENCE of injury explicitly</li>
+            <li>Sign and date the body map</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="col-head">Direct Quoting</h3>
+          <div class="quote-example good">
+            <div class="quote-label">✅ Correct</div>
+            <p>Patient stated: <em>"He hit me with a belt on my back"</em></p>
+          </div>
+          <div class="quote-example bad">
+            <div class="quote-label">❌ Incorrect</div>
+            <p>Patient reports being beaten by partner</p>
+          </div>
+          <div class="callout callout-info" style="margin-top:1rem">
+            <strong>Rule:</strong> Always use the patient's exact words in quotation marks. Never paraphrase.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 17: Section Divider - Privacy -->
+  <section class="slide divider-slide divider-4" id="slide-17">
+    <div class="slide-content divider-content">
+      <div class="divider-number">04</div>
+      <h2 class="divider-title">Privacy & Confidentiality</h2>
+      <p class="divider-sub">Consultation Environment · Information Security · Reporting</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 18: Privacy -->
+  <section class="slide" id="slide-18">
+    <div class="slide-content">
+      <div class="section-tag section-4">Privacy</div>
+      <h2>Ensuring Patient Privacy</h2>
+      <div class="two-col">
+        <div class="col">
+          <h3 class="col-head">Consultation Environment</h3>
+          <ul class="check-list">
+            <li>Private enclosed room (NOT curtains)</li>
+            <li>Door lockable from inside</li>
+            <li>"Consultation in Progress" signage</li>
+            <li>Only authorised personnel present</li>
+            <li>Family waits OUTSIDE unless patient requests</li>
+            <li>Same-gender chaperone available</li>
+            <li>Sound does not carry outside</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="col-head">Information Security</h3>
+          <div class="security-compare">
+            <div class="sec-col">
+              <h5>📄 Physical</h5>
+              <ul>
+                <li>Locked cabinet</li>
+                <li>Named staff access</li>
+                <li>Access log</li>
+                <li>Sealed transfers</li>
+              </ul>
+            </div>
+            <div class="sec-col">
+              <h5>💻 Digital</h5>
+              <ul>
+                <li>Encrypted system</li>
+                <li>Role-based access</li>
+                <li>Audit trail</li>
+                <li>NO WhatsApp</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 19: Mandatory Reporting -->
+  <section class="slide" id="slide-19">
+    <div class="slide-content">
+      <div class="section-tag section-4">Privacy</div>
+      <h2>Mandatory Reporting & Patient Rights</h2>
+      <div class="callout callout-critical">
+        <strong>Under the Maldives DVPA (2012):</strong> Healthcare providers MUST report all suspected/confirmed GBV
+        cases to the Maldives Police Service, Family Protection Authority, and Ministry of Gender.
+      </div>
+      <h3 class="col-head" style="margin-top:1.5rem">How to Explain Confidentiality Limits</h3>
+      <div class="speech-bubble">
+        <p>"Everything you share with me is confidential. I will not share without your permission, except where the law
+          requires me to report — specifically, if there is an immediate threat to your life or safety, or if a child is
+          involved. I will always inform you before any report is made."</p>
+      </div>
+      <div class="report-flow">
+        <div class="rep-item">🚨 Immediate threat → Report immediately</div>
+        <div class="rep-item">👶 Child abuse → Report always — no exceptions</div>
+        <div class="rep-item">✅ Patient consent → Report to relevant authorities</div>
+        <div class="rep-item">📞 Phone report → Written follow-up within 24–48h</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 20: Closing / Key Takeaways -->
+  <section class="slide" id="slide-20">
+    <div class="slide-content title-slide">
+      <div class="title-badge">Key Takeaways</div>
+      <h2 style="font-size:2rem;margin-bottom:2rem">Remember</h2>
+      <div class="takeaway-list">
+        <div class="takeaway"><span class="take-num">1</span>
+          <p>Every GBV case is a medico-legal case — identify, document, preserve evidence</p>
+        </div>
+        <div class="takeaway"><span class="take-num">2</span>
+          <p>PEP within 72 hours, STI prophylaxis empirically, Emergency Contraception within 120 hours</p>
+        </div>
+        <div class="takeaway"><span class="take-num">3</span>
+          <p>Use LIVES — Listen, Inquire, Validate, Enhance Safety, Support</p>
+        </div>
+        <div class="takeaway"><span class="take-num">4</span>
+          <p>Informed consent is separate for each element — patient can refuse or withdraw anytime</p>
+        </div>
+        <div class="takeaway"><span class="take-num">5</span>
+          <p>Privacy is a right — ensure it in every consultation, every time</p>
+        </div>
+      </div>
+      <div class="title-divider" style="margin-top:2rem"></div>
+      <p class="meta-info">Thank you for your commitment to protecting survivors.</p>
+      <p class="presenter-info">
+      <div class="presenter-dot"></div>IGMH — Indira Gandhi Memorial Hospital, Maldives</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
